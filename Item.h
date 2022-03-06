@@ -30,7 +30,7 @@ public:
     UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Item")
         FText ItemDisplayName;
 
-    // An optional discription for item.
+    // A discription for item.
     UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Item", meta = (MultiLine = true))
         FText ItemDescription;
 
