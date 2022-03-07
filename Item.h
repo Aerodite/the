@@ -4,9 +4,6 @@
 #include "UObject/NoExportTypes.h"
 #include "Item.generated.h"
 
-/**
- * 
- /
 UCLASS(Abstract, BlueprintType, Blueprintable, EditInlineNew, DefaultToInstanced)
 class INVENTORYSYSTEM_API UItem : public UObject
 {
@@ -14,7 +11,7 @@ class INVENTORYSYSTEM_API UItem : public UObject
 
 public:
     UItem();
-    // The text for using the item.
+    /* The text for using the item. */
     UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Item")
         FText UseActionText;
 
@@ -30,7 +27,7 @@ public:
     UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Item")
         FText ItemDisplayName;
 
-    // A discription for item.
+    // An optional discription for item.
     UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Item", meta = (MultiLine = true))
         FText ItemDescription;
 
